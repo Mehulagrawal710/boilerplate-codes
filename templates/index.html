@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <title></title>
+
+	<style type="text/css">
+
+	</style>
+</head>
+
+<body>
+	<h1>Hello, {{name}}</h1>
+    <p>Application running at {{baseurl}}</p>
+    <img src="{{ url_for('static', filename='tech.jpg') }}" width="100px">
+    <img src="/static/tech.jpg" width="100px">
+    <br><br><br>
+
+    <form action = "{{baseurl}}upload" method = "POST" enctype = "multipart/form-data">
+        <h2>Upload file</h2>
+        <input type='file' name = "f"/>
+        <button type = "submit">Upload</button>
+    </form>
+
+    <h2>Uploaded file:</h2>
+    <p>{{uploaded_files}}</p>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/js/mdb.min.js"></script>
+    <script type="text/javascript">
+
+    </script>
+</body>
+</html>
