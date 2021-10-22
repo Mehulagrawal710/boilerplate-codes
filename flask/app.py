@@ -8,7 +8,7 @@ from werkzeug.utils import secure_filename
 import os
 
 """
-@author Mehul Agrawal <mehul.agrawal@addverb.com>
+@author Mehul Agrawal <mehulagrawal710@gmail.com>
 """
 
 ####### Reading Configurations ########
